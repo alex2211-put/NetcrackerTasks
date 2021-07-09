@@ -1,4 +1,4 @@
-package ru.skillbench.tasks.basics.manch;
+package ru.skillbench.tasks.basics.equations;
 
 import ru.skillbench.tasks.basics.math.ComplexNumberImpl;
 
