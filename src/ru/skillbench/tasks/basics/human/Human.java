@@ -27,10 +27,6 @@ public class Human {
         return address;
     }
 
-    static public Human findLastName(String lastName) {
-        return null;
-    }
-
     @Override
     public String toString() {
         return this.firstName + " " + this.lastName + ": " + this.address;

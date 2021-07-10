@@ -4,7 +4,7 @@ public class Address {
     private final String country;
     private final String city;
     private final String street;
-    private final String  house;
+    private final String house;
 
     public Address(String country, String city, String street, String house) {
         this.city = city;
@@ -33,6 +33,11 @@ public class Address {
         return house;
     }
 
+    /**
+     *
+     * @param attribute атрибут адреса (страна, город, улица или дом)
+     * @return true если есть такой атрибут в адресе, false иначе
+     */
     public boolean hasAttribute(String attribute) {
         return (city.equals(attribute) || country.equals(attribute) || street.equals(attribute) || house.equals(attribute));
     }
