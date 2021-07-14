@@ -24,7 +24,9 @@ public class ExtendedClass {
     }
 
     public int hashCode() {
-        return (int) (31 * i * d * b * s.hashCode());
+        String[] splitter = String.valueOf(d).split("\\.");
+        int count = splitter[1].length();
+        return (int) (i * d * Math.pow(10, count) * b * s.hashCode());
     }
 
     public String toString() {
