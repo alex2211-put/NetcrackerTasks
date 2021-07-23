@@ -26,9 +26,7 @@ public class Person {
                 this.firstName = name[0];
                 this.lastName = name[1];
             }
-            case 1 -> {
-                this.lastName = name[0];
-            }
+            case 1 -> this.lastName = name[0];
             default -> throw new InputMismatchException();
         }
     }
@@ -50,10 +48,10 @@ public class Person {
      * @return полное имя
      */
     public String getFullName() {
-        if (this.lastName.equals(" ")) {
+        if (this.lastName.equals("")) {
             throw new NoSuchElementException();
         }
-        return (this.lastName + " " + this.middleName + " " + this.firstName).replace("  ", " ").strip();
+        return (this.firstName + " " + this.middleName + " " + this.lastName).replace("  ", " ").strip();
     }
 
 }
