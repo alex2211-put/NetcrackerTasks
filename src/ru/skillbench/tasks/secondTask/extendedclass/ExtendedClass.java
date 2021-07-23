@@ -4,7 +4,7 @@ public class ExtendedClass {
     private byte b;
     private int i;
     private double d;
-    private String s;
+    private String s = "";
 
     public boolean equals(Object anObject) {
         if (this == anObject)
