@@ -1,7 +1,6 @@
 package ru.skillbench.tasks.fourthTask.countWords;
 
 import java.util.*;
-import java.util.stream.IntStream;
 
 public class countWords extends Counter {
 
